@@ -31,49 +31,94 @@
                 </div>
               </div>
               <div class="header_top_right">
-                <ul>
-                  <li>
-                    <a href="tel:18006226" rel="nofollow">
-                      <span>
-                        <img
-                          src="./src/img/Hotline.png"
-                          alt="Hotline"
-                          style="vertical-align: middle; margin-top: -7px"
-                        />
-                      </span>
-                      <span style="line-height: 40px">1800 6226</span>
-                    </a>
-                    <span>|</span>
-                    <a
-                      href="javascript:void(0)"
-                      class="btn-login"
-                      rel="nofollow"
-                    >
-                      <span>Đăng nhập</span>
-                      <span>
-                        <img
-                          src="./src/img/user-square.svg"
-                          alt="Login"
-                          width="20"
-                        />
-                      </span>
-                    </a>
-                    <div class="login-drop">
-                      <a href="javascript:void(0)" class="btn-register"
-                        >Đăng ký</a
-                      >
-                      <a href="javascript:void(0)" class="btn-login"
-                        >Đăng nhập</a
-                      >
-                      <a href="#">Ưu đãi hội viên</a>
-                    </div>
-                  </li>
-                </ul>
+                <a href="tel:18006226" rel="nofollow">
+                  <span>
+                    <img
+                      src="./src/img/Hotline.png"
+                      alt="Hotline"
+                      style="vertical-align: middle; margin-top: -7px"
+                    />
+                  </span>
+                  <span style="line-height: 40px">1800 6226</span>
+                </a>
+                <span style="color: white">|</span>
+                <a href="javascript:void(0)" class="btn-login" rel="nofollow">
+                  <span>Đăng nhập</span>
+                  <span>
+                    <img
+                      src="./src/img/user-square.png"
+                      alt="Login"
+                      width="30"
+                      style="vertical-align: middle; margin-top: -7px"
+                    />
+                  </span>
+                </a>
+                <div class="login-drop">
+                  <a href="javascript:void(0)" class="btn-register">Đăng ký</a>
+                  <a href="javascript:void(0)" class="btn-login">Đăng nhập</a>
+                  <a href="#">Ưu đãi hội viên</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div></div>
+        <div id="SibarLogin" class="SibarNavBar right">
+          <div class="SibarNavBar_filter">
+            <button
+              type="button"
+              class="btn-close"
+              id="btn-close-sibar"
+            ></button>
+            <div class="SibarNavBar_filter__body body-sibar-login">
+              <form method="post" id="login_form" name="login_form">
+                <div class="heading">ĐĂNG NHẬP</div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Phone"
+                    name="Phone"
+                    placeholder="Nhập số điện thoại"
+                  />
+                  <p class="validate-error"></p>
+                </div>
+                <div class="form-group">
+                  <button
+                    type="button"
+                    class="btn btn-default-black block sb-login"
+                  >
+                    ĐĂNG NHẬP
+                  </button>
+                  <input type="submit" style="display: none" />
+                </div>
+              </form>
+              <p style="color: gray">Hoặc đăng nhập bằng</p>
+              <div class="btn_group_login">
+                <a
+                  href="https://aristino.com/gg-login.html?returnpath=%2f"
+                  class="btn btn-login-isocial"
+                >
+                  <img src="./src/img/google.svg" alt="google login" />
+                  Google
+                </a>
+                <a
+                  href="https://aristino.com/fb-login.html?returnpath=%2f"
+                  class="btn btn-login-isocial"
+                  rel="nofollow"
+                >
+                  <img src="./src/img/facebook.svg" alt="facebook login" />
+                  Facebook
+                </a>
+              </div>
+              <p>
+                Bạn chưa có tài khoản?
+                <a href="javascript:void(0)" class="btn-register" rel="nofollow"
+                  >Đăng ký</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
         <div></div>
         <div></div>
         <script></script>
