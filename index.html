@@ -119,11 +119,279 @@
             </div>
           </div>
         </div>
-        <div></div>
-        <div></div>
-        <script></script>
-        <div></div>
-        <div></div>
+        <div id="SibarRegister" class="SibarNavBar right">
+          <div class="SibarNavBar_filter">
+            <button
+              type="button"
+              class="btn-close"
+              id="btn-close-sibar"
+            ></button>
+            <div class="SibarNavBar_filter__body body-sibar-login">
+              <form method="post" id="register_form" name="register_form">
+                <div class="heading">ĐĂNG KÝ TÀI KHOẢN</div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="Name"
+                    placeholder="Họ và tên*"
+                  />
+                  <p class="validate-error validate-error-name"></p>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="Phone"
+                    placeholder="Số điện thoại*"
+                  />
+                  <p class="validate-error validate-error-phone"></p>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="Email"
+                    placeholder="Nhập email để nhận ưu đãi"
+                  />
+                  <p class="validate-error validate-error-email"></p>
+                </div>
+                <div class="form-group">
+                  <div class="form-inline">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="ValidCode"
+                      placeholder="Mã bảo mật"
+                    />
+                    <img
+                      src="/ajax/Security.html"
+                      id="ValidCode"
+                      onclick="change_captcha()"
+                      title="Click để đổi mã khác"
+                    />
+                  </div>
+                  <p class="validate-error validate-error-code"></p>
+                </div>
+
+                <div class="form-group">
+                  <button
+                    type="button"
+                    class="btn btn-default-black block sb-register"
+                  >
+                    ĐĂNG KÝ
+                  </button>
+                  <input type="submit" style="display: none" />
+                </div>
+              </form>
+              <p class="text-center">
+                Chọn Đăng ký để xác nhận rằng quý khách đã đọc Chính sách bảo
+                mật và chia sẻ thông tin của Aristino.
+              </p>
+              <p style="color: gray">Hoặc đăng nhập bằng</p>
+              <div class="btn_group_login">
+                <a
+                  href="https://aristino.com/gg-login.html?returnpath=%2f"
+                  class="btn btn-login-isocial"
+                >
+                  <img
+                    src="/Content/pc/images/icon/google.svg"
+                    alt="google login"
+                  />
+                  Google
+                </a>
+                <a
+                  href="https://aristino.com/fb-login.html?returnpath=%2f"
+                  class="btn btn-login-isocial"
+                  rel="nofollow"
+                >
+                  <img
+                    src="/Content/pc/images/icon/facebook.svg"
+                    alt="facebook login"
+                  />
+                  Facebook
+                </a>
+              </div>
+              <p>
+                Bạn đã có tài khoản?
+                <a href="javascript:void(0)" class="btn-login" rel="nofollow"
+                  >Đăng nhập</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="SibarOTP" class="SibarNavBar right">
+          <div class="SibarNavBar_filter">
+            <button
+              type="button"
+              class="btn-close"
+              id="btn-close-sibar"
+            ></button>
+            <div class="SibarNavBar_filter__body body-sibar-login">
+              <form method="post" id="otp_form" name="otp_form">
+                <div class="heading">XÁC THỰC</div>
+                <p class="text-center">
+                  Nhập mã xác minh vừa được gửi đến số điện thoại
+                  <strong></strong>
+                </p>
+                <div class="form-login">
+                  <div class="block_Verify">
+                    <input
+                      type="text"
+                      class="i-otp required"
+                      maxlength="1"
+                      placeholder="no"
+                    />
+                    <input
+                      type="text"
+                      class="i-otp required"
+                      maxlength="1"
+                      placeholder="no"
+                    />
+                    <input
+                      type="text"
+                      class="i-otp required"
+                      maxlength="1"
+                      placeholder="no"
+                    />
+                    <input
+                      type="text"
+                      class="i-otp required"
+                      maxlength="1"
+                      placeholder="no"
+                    />
+
+                    <input
+                      type="hidden"
+                      class="form-control"
+                      id="OTP"
+                      name="OTP"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button
+                    type="button"
+                    class="btn btn-default-black block sb-otp"
+                  >
+                    XÁC THỰC
+                  </button>
+                  <input type="submit" style="display: none" />
+                </div>
+              </form>
+              <p style="color: gray">Hoặc đăng nhập bằng</p>
+              <div class="btn_group_login">
+                <a
+                  href="https://aristino.com/gg-login.html?returnpath=%2f"
+                  class="btn btn-login-isocial"
+                >
+                  <img
+                    src="/Content/pc/images/icon/google.svg"
+                    alt="google login"
+                  />
+                  Google
+                </a>
+                <a
+                  href="https://aristino.com/fb-login.html?returnpath=%2f"
+                  class="btn btn-login-isocial"
+                  rel="nofollow"
+                >
+                  <img
+                    src="/Content/pc/images/icon/facebook.svg"
+                    alt="facebook login"
+                  />
+                  Facebook
+                </a>
+              </div>
+              <p>
+                Bạn chưa có tài khoản?
+                <a href="javascript:void(0)" class="btn-register" rel="nofollow"
+                  >Đăng ký</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+          $(function () {
+            $("#otp_form strong").html($("#Phone").val());
+          });
+        </script>
+        <div id="SibarSupplement" class="SibarNavBar right">
+          <div class="SibarNavBar_filter">
+            <button
+              type="button"
+              class="btn-close"
+              id="btn-close-sibar"
+            ></button>
+            <div class="SibarNavBar_filter__body body-sibar-login">
+              <form method="post" id="supplement_form" name="supplement_form">
+                <div class="heading">BỔ SUNG THÔNG TIN</div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="Name"
+                    placeholder="Họ và tên*"
+                  />
+                  <p class="validate-error validate-error-name"></p>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="Email"
+                    placeholder="Nhập email để nhận ưu đãi"
+                  />
+                  <p class="validate-error validate-error-email"></p>
+                </div>
+                <div class="form-group">
+                  <button
+                    type="button"
+                    class="btn btn-default-black block sb-supplement"
+                  >
+                    XÁC NHẬN
+                  </button>
+                  <input type="submit" style="display: none" />
+                </div>
+              </form>
+              <p class="text-center">
+                Bổ sung thông tin để nhận được ưu đãi tốt nhất từ Aristino.
+              </p>
+              <p style="color: gray">Hoặc đăng nhập bằng</p>
+              <div class="btn_group_login">
+                <a
+                  href="https://aristino.com/gg-login.html?returnpath=%2f"
+                  class="btn btn-login-isocial"
+                >
+                  <img
+                    src="/Content/pc/images/icon/google.svg"
+                    alt="google login"
+                  />
+                  Google
+                </a>
+                <a
+                  href="https://aristino.com/fb-login.html?returnpath=%2f"
+                  class="btn btn-login-isocial"
+                  rel="nofollow"
+                >
+                  <img
+                    src="/Content/pc/images/icon/facebook.svg"
+                    alt="facebook login"
+                  />
+                  Facebook
+                </a>
+              </div>
+              <p>
+                Bạn đã có tài khoản?
+                <a href="javascript:void(0)" class="btn-login" rel="nofollow"
+                  >Đăng nhập</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
       </header>
       <main></main>
       <footer id="footer" class="footer"></footer>
