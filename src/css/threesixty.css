@@ -1,0 +1,102 @@
+.threesixty {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.threesixty .threesixty_images {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.threesixty .threesixty_images img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  cursor: grab;
+}
+.threesixty .threesixty_images img.previous-image {
+  visibility: hidden;
+  /*
+Do not put here any other styles.
+It causes massive recalc / repaints and image flickering,
+especially on Firefox.
+*/
+}
+.threesixty .threesixty_images img.current-image {
+  visibility: visible;
+  /*
+Do not put here any other styles.
+It causes massive recalc / repaints and image flickering,
+especially on Firefox.
+*/
+}
+.threesixty .spinner {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  height: 30px;
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.threesixty .spinner span {
+  font-size: 12px;
+  font-weight: bolder;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  display: block;
+}
+.threesixty .nav_bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 150px;
+  z-index: 9999;
+}
+.threesixty .nav_bar a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  float: left;
+  text-indent: -99999px;
+}
+.threesixty .nav_bar a.nav_bar_play {
+  background: url(images/play-button.png) no-repeat 0 0;
+}
+.threesixty .nav_bar a.nav_bar_previous {
+  background: url(images/left-arrow.png) no-repeat 0 0;
+}
+.threesixty .nav_bar a.nav_bar_stop {
+  background: url(images/pause-button.png) no-repeat 0 0;
+}
+.threesixty .nav_bar a.nav_bar_next {
+  background: url(images/right-arrow.png) no-repeat 0 0;
+}
+.threesixty .nav_bar a.nav_bar_zoom {
+  background: url(images/zoom-in.png) no-repeat 0 0;
+}
+.threesixty .nav_bar a.nav_bar_zoom.zoom {
+  background: url(images/zoom-out.png) no-repeat 0 0;
+}
+/* html */
+.threesixty:-webkit-full-screen {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 200px;
+}
+.threesixty:-moz-full-screen {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 200px;
+}
